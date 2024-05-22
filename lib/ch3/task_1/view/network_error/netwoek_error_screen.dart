@@ -1,6 +1,5 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-
 import 'componects/mobile_data.dart';
 import 'componects/no_internet.dart';
 import 'componects/wifi_data.dart';
