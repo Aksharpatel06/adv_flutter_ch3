@@ -11,12 +11,12 @@ SafeArea no_internet_connection() {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 180,child: Image.asset('asset/img/EmptyState.png')),
-              Text(
+              const Text(
                 'No internet connection',
                 style: TextStyle(fontWeight: FontWeight.w800,fontSize: 17),
               ),
-              SizedBox(height: 10,),
-              SizedBox(
+              const SizedBox(height: 10,),
+              const SizedBox(
                 width: 280,
                 child: Text(
                   'Please check your internet connection',
