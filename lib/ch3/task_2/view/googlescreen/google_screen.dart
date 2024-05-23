@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import '../../../task_1/view/network_error/componects/no_internet.dart';
 import 'componects/bottom_naviagtion.dart';
+import 'componects/menu_item.dart';
 
 class GoogleScreen extends StatelessWidget {
   const GoogleScreen({super.key});
@@ -49,32 +50,7 @@ class GoogleScreen extends StatelessWidget {
                     SizedBox(
                       height: 25,
                     ),
-                    GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          crossAxisCount: 4),
-                      itemCount: menuList.length,
-                      shrinkWrap: true,
-                      itemBuilder: (context, index) {
-                        return Column(
-                          children: [
-                            Container(
-                              height: 35,
-                              width: 35,
-                              decoration: BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          MenuModal.setdata(menuList[index])
-                                              .img),
-                                      fit: BoxFit.fill)),
-                            ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Text(MenuModal.setdata(menuList[index]).name)
-                          ],
-                        );
-                      },
-                    ),
+                    menuItem(),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8.0),
                       child: Column(
@@ -146,5 +122,6 @@ class GoogleScreen extends StatelessWidget {
       bottomNavigationBar: bottomnaviagation(),
     );
   }
+
 
 }
