@@ -66,3 +66,84 @@ class MyApp extends StatelessWidget {
 ### Video 
 
 https://github.com/Aksharpatel06/adv_flutter_ch3/assets/143181114/0e62efc0-89b6-4b3e-999e-c28ed8db4f62
+
+
+## 3.2 Chrome : flutter_inappwebview Package 
+
+# flutter_inappwebview
+
+`flutter_inappwebview` is a Flutter package that allows you to embed WebView widgets into your Flutter application with ease. It provides a comprehensive set of features and functionalities, enabling you to control web content dynamically.
+
+## Installation
+
+Run `flutter pub get` to install the package.
+
+## Usage
+
+Here's a simple example demonstrating how to use `InAppWebView` and control it using its methods: `goBack`, `goForward`, `reload`, and `loadUrl`.
+
+### Methods
+
+- **goBack**: Navigates back in the webview's history.
+  ```dart
+  _webViewController.goBack();
+  ```
+
+- **goForward**: Navigates forward in the webview's history.
+  ```dart
+  _webViewController.goForward();
+  ```
+
+- **reload**: Reloads the current URL.
+  ```dart
+  _webViewController.reload();
+  ```
+
+- **loadUrl**: Loads a new URL.
+  ```dart
+  _webViewController.loadUrl(
+    urlRequest: URLRequest(url: Uri.parse("https://pub.dev")),
+  );
+  ```
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Connectivity Network'),
+        ),
+        body:  InAppWebView(
+        initialUrlRequest: URLRequest(url: Uri.parse("https://flutter.dev")),
+        onWebViewCreated: (controller) {
+          _webViewController = controller;
+        },
+      ),
+    );
+  }
+}
+```
+
+### Screenshots
+
+<div align="center">
+  <img src= "https://github.com/Aksharpatel06/adv_flutter_ch3/assets/143181114/0efdb06b-3802-49be-b6c3-7c3ba63af174" width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src= "https://github.com/Aksharpatel06/adv_flutter_ch3/assets/143181114/2095f090-1104-4e66-93ff-f688ef907d40" width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
+<div align="center">
+  <a href='https://github.com/Aksharpatel06/adv_flutter_ch3/tree/master/lib/ch3/task_2'>👉 📚 Go to dart file 📚 👈</a>
+</div>
+
+### Video 
+
+https://github.com/Aksharpatel06/adv_flutter_ch3/assets/143181114/d12fbab1-0dfe-4a72-9e70-eceaad66ebbe
