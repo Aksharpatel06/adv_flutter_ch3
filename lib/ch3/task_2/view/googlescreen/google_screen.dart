@@ -40,14 +40,14 @@ class GoogleScreen extends StatelessWidget {
                             hintText: 'Search or type address',
                             filled: true,
                             fillColor: Colors.grey.shade300,
-                            suffixIcon: Icon(Icons.mic),
-                            contentPadding: EdgeInsets.symmetric(horizontal: 20),
+                            suffixIcon: const Icon(Icons.mic),
+                            contentPadding: const EdgeInsets.symmetric(horizontal: 20),
                             border: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(25),
                                 borderSide: BorderSide.none)),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     menuItem(),
@@ -56,17 +56,17 @@ class GoogleScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             'Artices for you',
                             style: TextStyle(color: Colors.blue),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Container(
                             height: 100,
                             width: double.infinity,
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             decoration: BoxDecoration(
                               border: Border.all(width: 0.5,color: Colors.grey),
                               borderRadius: BorderRadius.circular(15),
@@ -74,7 +74,7 @@ class GoogleScreen extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Column(
+                                const Column(
                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -99,7 +99,7 @@ class GoogleScreen extends StatelessWidget {
                                   width: 80,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.circular(5),
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                           image: AssetImage(
                                               'asset/img/google image/music.jpg'),fit: BoxFit.cover)),
                                 )
