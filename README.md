@@ -59,6 +59,10 @@ class MyApp extends StatelessWidget {
   <img src= "https://github.com/Aksharpatel06/adv_flutter_ch3/assets/143181114/432d7e5c-0871-471c-bf92-3ecb3b59c7c0" width = 240> &nbsp;&nbsp;&nbsp;&nbsp;
 </div>
 
+<div align="center">
+  <a href='https://github.com/Aksharpatel06/adv_flutter_ch3/tree/master/lib/ch3/task_1/view/network_error'>👉 📚 Go to dart file 📚 👈</a>
+</div>
+
 ### Video 
 
 https://github.com/Aksharpatel06/adv_flutter_ch3/assets/143181114/0e62efc0-89b6-4b3e-999e-c28ed8db4f62
