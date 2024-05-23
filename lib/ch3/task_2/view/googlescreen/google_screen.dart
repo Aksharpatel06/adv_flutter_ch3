@@ -1,8 +1,5 @@
-import 'package:adv_flutter_ch3/ch3/task_2/modal/menu_list.dart';
-import 'package:adv_flutter_ch3/ch3/task_2/modal/menu_modal.dart';
 import 'package:adv_flutter_ch3/ch3/task_2/view/inappwebview/in_app_web_view_screen.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:provider/provider.dart';
@@ -32,6 +29,9 @@ class GoogleScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(20.0),
                   child: Column(
                     children: [
+                      const SizedBox(
+                        height: 60,
+                      ),
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 8.0),
                         child: SizedBox(
@@ -56,7 +56,7 @@ class GoogleScreen extends StatelessWidget {
                                     inAppWebViewController.loadUrl(
                                         urlRequest: URLRequest(url: WebUri('https://www.google.com/search?q=${Provider.of<GoogleProvider>(context,listen: false).searchText}&sca_esv=453cf80c9d34ac6b&sca_upv=1&rlz=1C1CHBD_enIN1099IN1101&sxsrf=ADLYWILO4ZE1r6P0Ha8wvoqAglAm7r1t5A%3A1716482160781&ei=cHBPZpCsL93V1e8PtZ-C2AM&ved=0ahUKEwiQpNOrmqSGAxXdavUHHbWPADsQ4dUDCBE&uact=5&oq=flutter&gs_lp=Egxnd3Mtd2l6LXNlcnAiB2ZsdXR0ZXIyChAjGIAEGCcYigUyChAjGIAEGCcYigUyBBAjGCcyChAAGIAEGEMYigUyCxAAGIAEGLEDGIMBMggQABiABBixAzILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIoFMgsQABiABBixAxiDATIIEAAYgAQYsQNIphZQ5wpYnRJwAngBkAEBmAGmAqABug6qAQYwLjEyLjG4AQPIAQD4AQGYAgSgAskCwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgUQABiABJgDAIgGAZAGCpIHAzIuMqAHgnM&sclient=gws-wiz-serp')));
                                   },
-                                  icon: Icon(Icons.search)),
+                                  icon: const Icon(Icons.search)),
                               contentPadding: const EdgeInsets.symmetric(horizontal: 20),
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(25),
