@@ -1,18 +1,20 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../utils/global_variable.dart';
+
 Row bottomnaviagation() {
   return Row(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
       IconButton(onPressed: () {
-
+        inAppWebViewController.goBack();
       }, icon: const Icon(CupertinoIcons.left_chevron)),
       IconButton(onPressed: () {
-
+        inAppWebViewController.goForward();
       }, icon: const Icon(CupertinoIcons.right_chevron)),
       IconButton(onPressed: () {
-
+        inAppWebViewController.reload();
       }, icon: const Icon(CupertinoIcons.refresh_thick)),
       IconButton(onPressed: () {
 
