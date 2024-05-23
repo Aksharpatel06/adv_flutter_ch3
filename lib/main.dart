@@ -1,5 +1,8 @@
 import 'package:adv_flutter_ch3/ch3/task_1/view/network_error/netwoek_error_screen.dart';
+import 'package:adv_flutter_ch3/ch3/task_2/view/googlescreen/google_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'ch3/task_2/view/inappwebview/in_app_web_view_screen.dart';
 
 void main()
 {
@@ -13,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Network_Error_Screen(),
+      home: GoogleScreen(),
     );
   }
 }
