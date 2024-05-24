@@ -99,7 +99,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Connectivity Network'),
         ),
-        body:  InAppWebView(
+        body:InAppWebView(
         initialUrlRequest: URLRequest(url: Uri.parse("https://flutter.dev")),
         onWebViewCreated: (controller) {
           _webViewController = controller;
