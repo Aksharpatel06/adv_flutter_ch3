@@ -82,29 +82,6 @@ Run `flutter pub get` to install the package.
 
 Here's a simple example demonstrating how to use `InAppWebView` and control it using its methods: `goBack`, `goForward`, `reload`, and `loadUrl`.
 
-### Methods
-
-- **goBack**: Navigates back in the webview's history.
-  ```dart
-  _webViewController.goBack();
-  ```
-
-- **goForward**: Navigates forward in the webview's history.
-  ```dart
-  _webViewController.goForward();
-  ```
-
-- **reload**: Reloads the current URL.
-  ```dart
-  _webViewController.reload();
-  ```
-
-- **loadUrl**: Loads a new URL.
-  ```dart
-  _webViewController.loadUrl(
-    urlRequest: URLRequest(url: Uri.parse("https://pub.dev")),
-  );
-  ```
 
 ```dart
 import 'package:flutter/material.dart';
